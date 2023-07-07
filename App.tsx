@@ -1,15 +1,9 @@
-import { StyleSheet, View } from 'react-native';
-import HomeView from './views/home/home-view';
 import * as Font from 'expo-font';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import { Router } from './core/core-module';
 
-const AppStyles = StyleSheet.create({
-  container: {
-    flex: 1,
-  }
-});
-
-export default function App(){
+export default function App({}){
   const [fontsLoaded, setFontsLoaded] = useState<Boolean>(false);
 
   Font.loadAsync({
@@ -20,5 +14,5 @@ export default function App(){
 
   if (!fontsLoaded) return (<View></View>);
 
-  return (<View style={AppStyles.container}><HomeView /></View>);
+  return (<Router />);
 }
