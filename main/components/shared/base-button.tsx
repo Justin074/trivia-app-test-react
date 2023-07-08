@@ -7,6 +7,7 @@ type BaseButtonProps = {
     text: String,
     screenWidth?: number,
     height?: number,
+    marginBottom?: number,
 }
 
 export default class BaseButton extends React.Component<BaseButtonProps> {
@@ -15,7 +16,8 @@ export default class BaseButton extends React.Component<BaseButtonProps> {
             onPress={this.props.onPress} style={{
                 backgroundColor: GlobalStyles.button.color,
                 borderRadius: 10,
-                flexDirection: 'row'}}>
+                flexDirection: 'row',
+                marginBottom: this.props.marginBottom}}>
             <View style={{
                 flex: this.props.screenWidth ?? 0.9,
                 height: this.props.height ?? 60,
@@ -23,7 +25,8 @@ export default class BaseButton extends React.Component<BaseButtonProps> {
                 justifyContent: 'center',}}>
                 <Text style={{
                     color: GlobalStyles.main.color,
-                    fontSize: 30,}}>
+                    fontSize: 30,
+                    textAlign: 'center'}}>
                     {this.props.text}
                 </Text>
             </View>
