@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e1a22570-7976-48d0-aca2-69da30a659b0"
+      }
+    },
+    "owner": "justinmon"
   }
 }
