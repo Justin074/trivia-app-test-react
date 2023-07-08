@@ -1,18 +1,30 @@
 import * as Font from 'expo-font';
-import React, { useState } from 'react';
+import React from 'react';
 import { View } from 'react-native';
-import { Router } from './core/core-module';
+import { Router } from './core/router/router';
 
-export default function App({}){
-  const [fontsLoaded, setFontsLoaded] = useState<Boolean>(false);
+export default class App extends React.Component {
+  constructor(props: any) {
+    super(props);
+    this.loadFonts();
+  }
 
-  Font.loadAsync({
-    RussoOne: require('./assets/fonts/RussoOne-Regular.ttf'),
-  }).then(() => {
-    setFontsLoaded(true);
-  });
+  state = {
+    fontsLoaded: false,
+  }
 
-  if (!fontsLoaded) return (<View></View>);
+  loadFonts() {
+    Font.loadAsync({
+      RussoOne: require('./assets/fonts/RussoOne-Regular.ttf'),
+    }).then(() => {
+      this.setState({
+        fontsLoaded: true,
+      });
+    });
+  }
 
-  return (<Router />);
+  render() {
+    if (!this.state.fontsLoaded) return (<View></View>);
+    return (<Router />);
+  }
 }

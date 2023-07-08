@@ -1,9 +1,10 @@
 import React from "react";
 import { Text, SafeAreaView, View } from "react-native";
-import { RouteProps, Routes } from "../../../core/core-module";
 import QuestionModel from "../../../core/models/question-model";
-import { BaseButton } from "../../components/components-module";
-import { ResultsStyles } from "../../main-module";
+import { Routes } from "../../../core/enums/routes-enum";
+import { RouteProps } from "../../../core/interfaces/route-props-interface";
+import BaseButton from "../../components/shared/base-button";
+import ResultsStyles from "../../styles/results/results-styles";
 
 interface ResultsProps{
     questions: QuestionModel[],

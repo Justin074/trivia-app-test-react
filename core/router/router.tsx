@@ -2,7 +2,9 @@ import React from "react";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { Routes } from "../enums/routes-enum";
-import { HomeView, QuestionsView, ResultsView } from "../../main/main-module";
+import HomeView from "../../main/views/home/home-view";
+import QuestionsView from "../../main/views/questions/questions-view";
+import ResultsView from "../../main/views/results/results-view";
 
 const Stack = createNativeStackNavigator();
 

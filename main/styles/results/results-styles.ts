@@ -33,17 +33,20 @@ const ResultsStyles = StyleSheet.create({
     },
     resultsText: {
         fontSize: 22, 
+        fontFamily: 'RussoOne',
         color: GlobalStyles.highlights.color,
     },
     correctText: {
         color: GlobalStyles.highlights.color, 
         fontSize: 20, 
+        fontFamily: 'RussoOne',
         paddingLeft: 20, 
         paddingBottom: 15,
     },
     incorrectText: {
         color: GlobalStyles.main.color, 
         fontSize: 20, 
+        fontFamily: 'RussoOne',
         paddingLeft: 20, 
         paddingBottom: 15,
     },

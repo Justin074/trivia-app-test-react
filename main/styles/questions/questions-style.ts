@@ -15,16 +15,19 @@ const QuestionsStyles = StyleSheet.create({
     },
     topText: {
         color: GlobalStyles.main.color,
+        fontFamily: 'RussoOne',
         fontSize: 18,
     },
     categoryText: {
         color: GlobalStyles.highlights.color,
         fontSize: 35,
+        fontFamily: 'RussoOne',
         textAlign: 'center',
     },
     questionText: {
         color: GlobalStyles.main.color,
         fontSize: 18,
+        fontFamily: 'RussoOne',
         textAlign: 'center',
     },
     contentHousing: {

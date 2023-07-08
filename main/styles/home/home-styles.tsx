@@ -14,16 +14,19 @@ const HomeStyles = StyleSheet.create({
     },
     thisText: {
         color: GlobalStyles.main.color,
+        fontFamily: 'RussoOne',
         fontSize: 25,
     },
     triviaText: {
         color: GlobalStyles.highlights.color,
         fontSize: 35,
+        fontFamily: 'RussoOne',
         textAlign: 'center',
     },
     questionsText: {
         color: GlobalStyles.main.color,
         fontSize: 18,
+        fontFamily: 'RussoOne',
         textAlign: 'center',
     }
 
