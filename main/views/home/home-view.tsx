@@ -2,8 +2,8 @@ import React from "react";
 import { Image, Text, View } from "react-native";
 import { HomeStyles } from '../../styles/styles-module';
 import { RouteProps, Routes } from '../../../core/core-module';
-import Spacer from "../../components/spacer";
-import BaseButton from "../../components/base-button";
+import Spacer from "../../components/shared/spacer";
+import BaseButton from "../../components/shared/base-button";
 
 class HomeView extends React.Component<RouteProps> {
     private buttonNavigation(): void {

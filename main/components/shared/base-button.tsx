@@ -1,6 +1,6 @@
 import React from "react";
 import { GestureResponderEvent, Text, TouchableOpacity, View } from "react-native";
-import { GlobalStyles } from "../styles/styles-module";
+import { GlobalStyles } from "../../styles/styles-module";
 
 type BaseButtonProps = {
     onPress: (event: GestureResponderEvent) => void,
